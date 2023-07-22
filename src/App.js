@@ -5,12 +5,11 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import {Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import {Ecommerce, Orders, Employees, Calendar,
 Stacked, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker,
-ColorMapping, Editor } from './pages';
-import { Line , Pyramid } from '@syncfusion/ej2/circulargauge';
+ColorMapping, Editor ,Line , Pyramid } from './pages';
 import './App.css';
 import { Side } from '@syncfusion/ej2/svg-base';
 const App = () => {
-  const activeMenu = false;
+  const activeMenu = true;
   return (
     <div>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
