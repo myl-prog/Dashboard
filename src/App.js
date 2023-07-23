@@ -6,10 +6,12 @@ import {Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import {Ecommerce, Orders, Employees, Calendar,
 Stacked, Customers, Kanban, Area, Bar, Pie, Financial, ColorPicker,
 ColorMapping, Editor ,Line , Pyramid } from './pages';
+import { useStateContext } from './contexts/ContextProvider';
+
 import './App.css';
 import { Side } from '@syncfusion/ej2/svg-base';
 const App = () => {
-  const activeMenu = true;
+  const {activeMenu} =useStateContext();
   return (
     <div>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
